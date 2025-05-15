@@ -1,5 +1,5 @@
 # Fase de construção
-FROM node:16 as build-stage
+FROM node:18 as build-stage
 
 # Definir diretório de trabalho
 WORKDIR /app

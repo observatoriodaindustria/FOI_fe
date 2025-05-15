@@ -12,5 +12,5 @@ services:
       - FOI_network_fe
 
 networks:
-  suape_network_fe:
+  foi_network_fe:
     name: FOI_network_fe

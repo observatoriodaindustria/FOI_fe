@@ -1,16 +1,16 @@
 ---
 services:
   flask-app:
-    image: FOI-fe:latest
-    container_name: FOI-fe
+    image: foi-fe:latest
+    container_name: foi-fe
     build:
       context: .
       dockerfile: Dockerfile
     ports:
       - '9003:80'
     networks:
-      - FOI_network_fe
+      - foi_network_fe
 
 networks:
   foi_network_fe:
-    name: FOI_network_fe
+    name: foi_network_fe

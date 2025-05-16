@@ -7,6 +7,9 @@ WORKDIR /app
 # Copiar arquivos de configuração do projeto
 COPY package*.json ./
 
+# Copia o resto dos arquivos (quasar.config.js)
+COPY . .
+
 # Instalar dependências
 RUN npm install
 

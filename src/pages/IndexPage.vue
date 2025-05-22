@@ -1,13 +1,18 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
-  </q-page>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <div>
+    <TheHeader />
+    <DashboardProjetos />
+    <TheFooter />
+  </div>
 </template>
 
 <script setup>
-//
+import TheHeader from '../components/TheHeader.vue'
+import TheFooter from '../components/TheFooter.vue'
+import DashboardProjetos from '../components/DashboardProjetos.vue'
 </script>

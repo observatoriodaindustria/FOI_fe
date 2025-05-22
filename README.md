@@ -1,40 +1,67 @@
-# Forum_Obras (forum-obras)
+# Forum\_Obras (forum-obras)
 
-Forum de acompanhamento de obras estaduais.
+Fórum para acompanhamento de obras estaduais. Este sistema foi desenvolvido com o objetivo de facilitar a comunicação entre gestores, engenheiros, fiscais e demais envolvidos em obras públicas, permitindo a discussão de problemas, o compartilhamento de informações e a documentação de processos.
 
-## Install the dependencies
+##  Funcionalidades
+
+* Criação e gerenciamento de tópicos por obra
+* Categorizacão por tipo de obra
+* Integração com relatórios e documentos de fiscalização (em desenvolvimento)
+
+##  Tecnologias Utilizadas
+
+* **Frontend:** Quasar Framework (Vue.js)
+* **Backend:** Node.js, Express.js (caso aplicável)
+* **Banco de Dados:** MySQL / PostgreSQL (especificar conforme implementação)
+* **Outras ferramentas:** ESLint, Prettier, Vite
+
+##  Instalação e Execução
+
+### Instalar dependências
+
 ```bash
 yarn
-# or
+# ou
 npm install
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+### Executar em modo desenvolvimento (com hot reload)
+
 ```bash
 quasar dev
 ```
 
+### Analisar e corrigir problemas de lint
 
-### Lint the files
 ```bash
 yarn lint
-# or
+# ou
 npm run lint
 ```
 
+### Formatador de código (Prettier)
 
-### Format the files
 ```bash
 yarn format
-# or
+# ou
 npm run format
 ```
 
+### Gerar build para produção
 
-### Build the app for production
 ```bash
 quasar build
 ```
 
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+### Personalizar configuração
+
+Consulte a documentação oficial do Quasar para personalizações:
+[Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js)
+
+##  Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+

@@ -6,13 +6,12 @@ Fórum para acompanhamento de obras estaduais. Este sistema foi desenvolvido com
 
 * Criação e gerenciamento de tópicos por obra
 * Categorizacão por tipo de obra
-* Integração com relatórios e documentos de fiscalização (em desenvolvimento)
 
 ##  Tecnologias Utilizadas
 
 * **Frontend:** Quasar Framework (Vue.js)
 * **Backend:** Node.js, Express.js (caso aplicável)
-* **Banco de Dados:** MySQL / PostgreSQL (especificar conforme implementação)
+* **Banco de Dados:** MySQL / PostgreSQL
 * **Outras ferramentas:** ESLint, Prettier, Vite
 
 ##  Instalação e Execução

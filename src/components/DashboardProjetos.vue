@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="dashboard-header">
     <h3>Acompanhe seus projetos</h3>
   </div>
   <div class="dashboard-container">
@@ -16,19 +16,23 @@ const dashboardUrl =
 </script>
 
 <style scoped>
-/* Título fixo no topo */
 h3 {
   text-align: center;
   margin: 0;
-  padding: 16px 0;
-  font-size: 24px;
+  padding: 8px 0;
+  font-size: 20px;
   color: #1a499b;
   font-family: 'open-sans', sans-serif;
-  font-weight: 450;
+  font-weight: 550;
   background-color: #f5f5f5;
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+.dashboard-header h3 {
+  padding: 8px 0;
+  font-size: 18px;
 }
 
 /* Container central */
@@ -39,7 +43,7 @@ h3 {
   align-items: center;
   padding: 0;
   margin: 0 auto;
-  height: calc(100vh - 64px);
+  height: 100%;
   width: 100%;
   max-width: 100vw;
   background-color: #f5f5f5;

@@ -5,6 +5,7 @@
         <!-- Logo e Contato -->
         <div class="col-md-6 col-12 mb-4 bloco-logo-contato">
           <img src="src/assets/LogoSistemaFiepe.png" alt="Logo FIEPE" class="logo" />
+          <!--
           <ul class="list-unstyled mt-3">
             <li><i class="fas fa-phone"></i> FONE: (81) 3412-8300</li>
             <li>
@@ -15,7 +16,7 @@
           </ul>
         </div>
 
-        <!-- Sede -->
+         Sede
         <div class="col-md-6 col-12 mb-4">
           <h6 class="text-uppercase">Sede</h6>
           <p>
@@ -24,7 +25,7 @@
             Fone: (81) 3412-8300<br />
             contato@fiepe.org.br
           </p>
-        </div>
+        --></div>
       </div>
     </div>
   </footer>
@@ -36,7 +37,7 @@
 .footer {
   background-color: #1957a4;
   color: #fff;
-  padding: 40px 20px;
+  padding: 30px 10px;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 1.6;
@@ -98,6 +99,24 @@
 /* Sede info */
 .footer .col-md-6:last-child {
   padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer .bloco-logo-contato,
+  .footer .col-md-6:last-child {
+    padding-left: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer .logo {
+    margin: 0 auto 16px;
+  }
+
+  .footer ul,
+  .footer p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {

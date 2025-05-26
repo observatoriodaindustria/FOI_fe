@@ -1,31 +1,11 @@
 <template>
   <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <!-- Logo e Contato -->
-        <div class="col-md-6 col-12 mb-4 bloco-logo-contato">
-          <img src="src/assets/LogoSistemaFiepe.png" alt="Logo FIEPE" class="logo" />
-          <!--
-          <ul class="list-unstyled mt-3">
-            <li><i class="fas fa-phone"></i> FONE: (81) 3412-8300</li>
-            <li>
-              <i class="fas fa-envelope"></i>
-              <a href="mailto:contato@fiepe.org.br">contato@fiepe.org.br</a>
-            </li>
-            <li><i class="fab fa-whatsapp"></i> (81) 98121-9452</li>
-          </ul>
-        </div>
-
-         Sede
-        <div class="col-md-6 col-12 mb-4">
-          <h6 class="text-uppercase">Sede</h6>
-          <p>
-            Av. Cruz Cabugá, 767, Santo Amaro,<br />
-            Recife - PE<br />
-            Fone: (81) 3412-8300<br />
-            contato@fiepe.org.br
-          </p>
-        --></div>
+    <div class="footer-content">
+      <div class="direitos">
+        <h6>Direitos Autorais © 2025 FIEPE. Todos os direitos reservados.</h6>
+      </div>
+      <div class="desenvolvido">
+        <h6>Powered by Observatório da Indústria</h6>
       </div>
     </div>
   </footer>
@@ -35,105 +15,33 @@
 
 <style scoped>
 .footer {
-  background-color: #1957a4;
-  color: #fff;
-  padding: 30px 10px;
+  background-color: #1a499b;
+  padding: 22px 32px;
+  color: #ffffff;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  text-decoration: underline;
+  position: relative;
 }
 
 .footer h6 {
-  font-weight: 700;
-  font-size: 16px;
-  margin-bottom: 12px;
-}
-
-.footer .row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.footer .bloco-logo-contato {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-left: 20px;
-}
-
-.footer .logo {
-  max-width: 160px;
-  height: auto;
-  margin-bottom: 16px;
-}
-
-.footer ul {
-  padding: 0;
-  list-style: none;
   margin: 0;
+  font-size: 12px;
 }
 
-.footer li {
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
+.footer-content {
+  position: relative;
+  text-align: center;
 }
 
-.footer i {
-  margin-right: 8px;
-  font-size: 14px;
+.footer .direitos {
+  text-align: center;
 }
 
-/* Sede info */
-.footer .col-md-6:last-child {
-  padding-left: 20px;
-}
-
-@media (max-width: 768px) {
-  .footer .bloco-logo-contato,
-  .footer .col-md-6:last-child {
-    padding-left: 0;
-    text-align: center;
-    align-items: center;
-  }
-
-  .footer .logo {
-    margin: 0 auto 16px;
-  }
-
-  .footer ul,
-  .footer p {
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer .bloco-logo-contato,
-  .footer .col-md-6:last-child {
-    padding-left: 0;
-    text-align: center;
-    align-items: center;
-  }
-
-  .footer .logo {
-    margin: 0 auto 16px;
-  }
-
-  .footer ul,
-  .footer p {
-    text-align: center;
-  }
+.footer .desenvolvido {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  padding-right: 20px;
 }
 </style>

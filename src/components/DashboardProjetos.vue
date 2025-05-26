@@ -1,7 +1,4 @@
 <template>
-  <div class="dashboard-header">
-    <h3>Acompanhe seus projetos</h3>
-  </div>
   <div class="dashboard-container">
     <div class="iframe-wrapper">
       <iframe :src="dashboardUrl" frameborder="0" class="dashboard-frame"></iframe>
@@ -16,25 +13,7 @@ const dashboardUrl =
 </script>
 
 <style scoped>
-h3 {
-  text-align: center;
-  margin: 0;
-  padding: 8px 0;
-  font-size: 20px;
-  color: #1a499b;
-  font-family: 'open-sans', sans-serif;
-  font-weight: 550;
-  background-color: #f5f5f5;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.dashboard-header h3 {
-  padding: 8px 0;
-  font-size: 18px;
-}
-
+/* f5f5f5 */
 /* Container central */
 .dashboard-container {
   position: relative;
@@ -43,16 +22,17 @@ h3 {
   align-items: center;
   padding: 0;
   margin: 0 auto;
-  height: 100%;
-  width: 100%;
-  max-width: 100vw;
-  background-color: #f5f5f5;
+  height: 90%;
+  width: 90%;
+  max-width: 90vw;
+  background-color: #ffffff;
   overflow: hidden;
+  margin-top: 1.1%;
 }
 
 /* Wrapper para centralizar e impedir overflow */
 .iframe-wrapper {
-  width: 100%;
+  width: 90%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -60,8 +40,8 @@ h3 {
 
 /* Responsivo com aspecto fixo */
 .dashboard-frame {
-  width: 100%;
-  max-width: 100%;
+  width: 90%;
+  max-width: 90%;
   aspect-ratio: 16 / 9;
   border: none;
   border-radius: 8px;
@@ -73,7 +53,7 @@ h3 {
   bottom: 1px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
+  width: 81%;
   height: 38px;
   background-color: #f5f5f5;
   border-bottom-left-radius: 4px;

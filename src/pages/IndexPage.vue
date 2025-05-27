@@ -3,6 +3,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <div class="layout">
     <TheHeader class="header" />
@@ -17,4 +18,17 @@ import TheFooter from '../components/TheFooter.vue'
 import DashboardProjetos from '../components/DashboardProjetos.vue'
 </script>
 
-<style></style>
+<style>
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+</style>

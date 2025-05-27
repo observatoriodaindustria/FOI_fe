@@ -13,7 +13,6 @@ const dashboardUrl =
 </script>
 
 <style scoped>
-/* f5f5f5 */
 /* Container central */
 .dashboard-container {
   position: relative;
@@ -30,7 +29,7 @@ const dashboardUrl =
   margin-top: 1.1%;
 }
 
-/* Wrapper para centralizar e impedir overflow */
+/* Wrapper */
 .iframe-wrapper {
   width: 90%;
   overflow: hidden;
@@ -38,7 +37,7 @@ const dashboardUrl =
   justify-content: center;
 }
 
-/* Responsivo com aspecto fixo */
+/* Dashboard */
 .dashboard-frame {
   width: 90%;
   max-width: 90%;
@@ -47,7 +46,7 @@ const dashboardUrl =
   border-radius: 8px;
 }
 
-/* Camada para cobrir parte inferior do iframe */
+/* Máscara inferior */
 .iframe-mask {
   position: absolute;
   bottom: 1px;
@@ -62,10 +61,43 @@ const dashboardUrl =
   pointer-events: none;
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
+/*  RESPONSIVIDADE */
+@media (max-width: 1200px) {
+  .dashboard-container {
+    width: 85%;
+    height: 85%;
+  }
+
   .dashboard-frame {
-    aspect-ratio: 4 / 3;
+    width: 85%;
+    max-width: 85%;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 992px) {
+  .dashboard-container {
+    width: 80%;
+    height: 80%;
+  }
+
+  .dashboard-frame {
+    width: 80%;
+    max-width: 80%;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    width: 80%;
+    height: 80%;
+    margin-top: 0;
+  }
+
+  .dashboard-frame {
+    aspect-ratio: 16 / 9;
+    transform: scale(0.95);
   }
 
   .iframe-mask {
@@ -77,10 +109,27 @@ const dashboardUrl =
     font-size: 18px;
   }
 }
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    width: 95%;
+    height: auto;
+  }
+
+  .dashboard-frame {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+
+  .iframe-mask {
+    width: 100%;
+    height: 32px;
+  }
+}
 </style>
 
 <style>
-/* Estilos globais para evitar scroll lateral */
+/* Global */
 html,
 body {
   margin: 0;

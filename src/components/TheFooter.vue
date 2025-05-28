@@ -29,9 +29,10 @@
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .footer .direitos {

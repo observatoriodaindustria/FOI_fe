@@ -19,8 +19,10 @@
   padding: 0.5% 3%;
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
-  position: relative;
+  position: fixed;
   bottom: 0px;
+  left: 0;
+  right: 0;
 }
 
 .footer h6 {

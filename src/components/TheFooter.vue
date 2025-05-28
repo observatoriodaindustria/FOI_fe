@@ -16,10 +16,12 @@
 <style scoped>
 .footer {
   background-color: #1a499b;
-  padding: 22px 32px;
+  padding: 0.5% 3%;
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   position: relative;
+  bottom: 0;
+  top: -1px;
 }
 
 .footer h6 {

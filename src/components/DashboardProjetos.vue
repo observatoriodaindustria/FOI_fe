@@ -22,7 +22,7 @@ const dashboardUrl =
   padding: 0;
   margin: 0 auto;
   height: 90%;
-  width: 90%;
+  width: 96%;
   max-width: 90vw;
   background-color: #ffffff;
   overflow: hidden;
@@ -31,7 +31,7 @@ const dashboardUrl =
 
 /* Wrapper */
 .iframe-wrapper {
-  width: 90%;
+  width: 82.4%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -52,61 +52,18 @@ const dashboardUrl =
   bottom: 1px;
   left: 50%;
   transform: translateX(-50%);
-  width: 81%;
+  width: 86%;
   height: 38px;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   z-index: 2;
   pointer-events: none;
 }
 
-/*  RESPONSIVIDADE */
-@media (max-width: 1200px) {
-  .dashboard-container {
-    width: 85%;
-    height: 85%;
-  }
-
-  .dashboard-frame {
-    width: 85%;
-    max-width: 85%;
-    aspect-ratio: 16 / 9;
-  }
-}
-
-@media (max-width: 992px) {
-  .dashboard-container {
-    width: 80%;
-    height: 80%;
-  }
-
-  .dashboard-frame {
-    width: 80%;
-    max-width: 80%;
-    aspect-ratio: 16 / 9;
-  }
-}
-
-@media (max-width: 768px) {
-  .dashboard-container {
-    width: 80%;
-    height: 80%;
-    margin-top: 0;
-  }
-
-  .dashboard-frame {
-    aspect-ratio: 16 / 9;
-    transform: scale(0.95);
-  }
-
-  .iframe-mask {
-    height: 40px;
-    width: 100%;
-  }
-
-  h3 {
-    font-size: 18px;
+@media (min-width: 1368px) {
+  .iframe-wrapper {
+    width: 92.9%;
   }
 }
 

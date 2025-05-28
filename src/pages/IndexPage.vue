@@ -23,12 +23,19 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
+
 .layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
+}
+
+.dashboard {
+  flex: 1;
 }
 </style>

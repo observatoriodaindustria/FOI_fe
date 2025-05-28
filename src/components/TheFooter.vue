@@ -20,8 +20,7 @@
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   position: relative;
-  bottom: 0;
-  top: -1px;
+  bottom: 0px;
 }
 
 .footer h6 {

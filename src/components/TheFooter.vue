@@ -19,10 +19,7 @@
   padding: 0.5% 3%;
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
-  position: fixed;
-  bottom: 0px;
-  left: 0;
-  right: 0;
+  width: 100%;
 }
 
 .footer h6 {
@@ -31,8 +28,10 @@
 }
 
 .footer-content {
-  position: relative;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer .direitos {

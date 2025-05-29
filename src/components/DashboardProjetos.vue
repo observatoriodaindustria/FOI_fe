@@ -2,11 +2,7 @@
   <div class="dashboard-container">
     <div class="iframe-wrapper">
       <div class="iframe-inner">
-        <iframe
-          :src="dashboardUrl"
-          frameborder="0"
-          class="dashboard-frame"
-        ></iframe>
+        <iframe :src="dashboardUrl" frameborder="0" class="dashboard-frame"></iframe>
         <div class="iframe-mask"></div>
       </div>
     </div>
@@ -28,7 +24,7 @@ const dashboardUrl =
 }
 
 .iframe-wrapper {
-  width: 82.4%;
+  width: 1450px; /* Largura fixa para desktop */
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -40,8 +36,7 @@ const dashboardUrl =
 .iframe-inner {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 padrão */
-  height: 0;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
 }
 
@@ -53,26 +48,27 @@ const dashboardUrl =
   height: 100%;
   border: none;
   border-radius: 8px;
+  z-index: 1;
 }
 
 /* Máscara */
 .iframe-mask {
   position: absolute;
-  bottom: 20px;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 38px;
+  height: 40px;
   background-color: #ffffff;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  z-index: 10;
+  z-index: 2;
   pointer-events: none;
 }
 
 /* Responsividade específica para resoluções menores */
 @media (max-width: 1366px) {
   .iframe-wrapper {
-    width: 95%;
+    width: 55%;
   }
 
   .iframe-inner {
@@ -81,7 +77,6 @@ const dashboardUrl =
 
   .iframe-mask {
     height: 34px;
-    bottom: 16px;
   }
 }
 
@@ -92,7 +87,6 @@ const dashboardUrl =
 
   .iframe-mask {
     height: 32px;
-    bottom: 12px;
   }
 }
 </style>

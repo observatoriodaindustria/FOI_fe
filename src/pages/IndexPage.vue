@@ -22,7 +22,7 @@ import DashboardProjetos from '../components/DashboardProjetos.vue'
 html,
 body {
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;

@@ -31,21 +31,26 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
 }
 
-.footer .direitos,
-.footer .desenvolvido {
+.direitos {
   flex: 1;
   text-align: center;
+}
+
+.desenvolvido {
+  text-align: right;
+  min-width: max-content;
 }
 
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
+    gap: 8px;
   }
 
-  .footer .desenvolvido {
+  .direitos,
+  .desenvolvido {
     text-align: center;
   }
 }

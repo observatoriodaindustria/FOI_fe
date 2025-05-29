@@ -10,11 +10,13 @@
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  box-shadow: none;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .logo-fiepe {
   height: 40px;
   width: auto;
+  max-width: 100%;
 }
 </style>

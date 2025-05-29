@@ -25,6 +25,11 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
 }
 
 .layout {
@@ -33,9 +38,12 @@ body {
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 .dashboard {
   flex: 1;
+  width: 100%;
 }
 </style>

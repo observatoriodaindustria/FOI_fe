@@ -11,8 +11,6 @@
   </footer>
 </template>
 
-<script setup></script>
-
 <style scoped>
 .footer {
   background-color: #1a499b;
@@ -20,6 +18,7 @@
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .footer h6 {
@@ -29,22 +28,25 @@
 
 .footer-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  position: relative;
+  gap: 8px;
 }
 
-.footer .direitos {
+.footer .direitos,
+.footer .desenvolvido {
+  flex: 1;
   text-align: center;
 }
 
-.footer .desenvolvido {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: right;
-  padding-right: 20px;
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer .desenvolvido {
+    text-align: center;
+  }
 }
 </style>
